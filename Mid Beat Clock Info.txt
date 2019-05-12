@@ -1,0 +1,14 @@
+Midi beat clock.
+
+Clock is sent at 24 ppqn (pulses per quater note). It is up to the receiver to track the actual sonng position.
+
+Each event is sent as a single byte instruction.
+
+248	0xf8	Clock pulse
+250	0xfa	Start (at begining)
+251 	0xfb	continue (at point where stopped)
+252	0xfc	Stop (does not automatically rewind)
+
+There is also a 10 ms tick independent of tempo:
+
+249	0xf9	tick at 10 ms.

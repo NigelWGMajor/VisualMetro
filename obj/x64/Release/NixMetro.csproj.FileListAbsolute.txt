@@ -1,0 +1,14 @@
+N:\NixBox\Dropbox\Nix\Dev\Code\AV\VstNew\VisualMetro\Active\bin\x64\Release\Metro.net.dll
+N:\NixBox\Dropbox\Nix\Dev\Code\AV\VstNew\VisualMetro\Active\bin\x64\Release\Metro.net.pdb
+N:\NixBox\Dropbox\Nix\Dev\Code\AV\VstNew\VisualMetro\Active\bin\x64\Release\Jacobi.Vst.Samples.MidiNoteMapper.XML
+N:\NixBox\Dropbox\Nix\Dev\Code\AV\VstNew\VisualMetro\Active\bin\x64\Release\Jacobi.Vst.Core.dll
+N:\NixBox\Dropbox\Nix\Dev\Code\AV\VstNew\VisualMetro\Active\bin\x64\Release\Jacobi.Vst.Framework.dll
+N:\NixBox\Dropbox\Nix\Dev\Code\AV\VstNew\VisualMetro\Active\obj\x64\Release\View.baml
+N:\NixBox\Dropbox\Nix\Dev\Code\AV\VstNew\VisualMetro\Active\obj\x64\Release\View.g.cs
+N:\NixBox\Dropbox\Nix\Dev\Code\AV\VstNew\VisualMetro\Active\obj\x64\Release\Metro.net_MarkupCompile.cache
+N:\NixBox\Dropbox\Nix\Dev\Code\AV\VstNew\VisualMetro\Active\obj\x64\Release\Metro.net.g.resources
+N:\NixBox\Dropbox\Nix\Dev\Code\AV\VstNew\VisualMetro\Active\obj\x64\Release\NixMetro.csproj.CoreCompileInputs.cache
+N:\NixBox\Dropbox\Nix\Dev\Code\AV\VstNew\VisualMetro\Active\obj\x64\Release\Metro.net.dll
+N:\NixBox\Dropbox\Nix\Dev\Code\AV\VstNew\VisualMetro\Active\obj\x64\Release\Metro.net.pdb
+N:\NixBox\Dropbox\Nix\Dev\Code\AV\VstNew\VisualMetro\Active\obj\x64\Release\NixMetro.csprojAssemblyReference.cache
+N:\NixBox\Dropbox\Nix\Dev\Code\AV\VstNew\VisualMetro\Active\obj\x64\Release\NixMetro.csproj.CopyComplete

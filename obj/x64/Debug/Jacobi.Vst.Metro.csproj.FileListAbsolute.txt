@@ -1,0 +1,5 @@
+D:\Dropbox\Dropbox\Nix\Dev\Code\AV\VstNew\VisualMetro\Active\obj\x64\Debug\Nix.Metro.MetroUI.resources
+D:\Dropbox\Dropbox\Nix\Dev\Code\AV\VstNew\VisualMetro\Active\obj\x64\Debug\Nix.Metro.Repeater.resources
+D:\Dropbox\Dropbox\Nix\Dev\Code\AV\VstNew\VisualMetro\Active\obj\x64\Debug\Nix.Metro.Satellite.resources
+D:\Dropbox\Dropbox\Nix\Dev\Code\AV\VstNew\VisualMetro\Active\obj\x64\Debug\Nix.Metro.Satellite.sq.resources
+D:\Dropbox\Dropbox\Nix\Dev\Code\AV\VstNew\VisualMetro\Active\obj\x64\Debug\Jacobi.Vst.Metro.csproj.GenerateResource.Cache

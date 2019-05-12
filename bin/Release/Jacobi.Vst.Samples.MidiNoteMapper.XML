@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Metro.net</name>
+    </assembly>
+    <members>
+        <member name="T:Nix.Metro.AudioProcessor">
+            <summary>
+            A dummy audio processor only used for the timing of midi processing.
+            </summary>
+        </member>
+        <member name="M:Nix.Metro.AudioProcessor.#ctor(Nix.Metro.Plugin)">
+            <summary>
+            Constructs a new instance.
+            </summary>
+            <param name="plugin">Must not be null.</param>
+        </member>
+        <member name="M:Nix.Metro.AudioProcessor.Process(Jacobi.Vst.Core.VstAudioBuffer[],Jacobi.Vst.Core.VstAudioBuffer[])">
+            <inheritdoc />
+            <remarks>This method is used to push midi events to the host.</remarks>
+        </member>
+        <member name="T:Nix.Metro.Cue">
+            <summary>
+            Defines the displayable object, intended for indexed access from a list or array.
+            </summary>
+        </member>
+        <member name="T:Nix.Metro.MidiProcessor">
+            <summary>
+            Implements the incoming Midi event handling for the plugin.
+            </summary>
+        </member>
+        <member name="M:Nix.Metro.MidiProcessor.#ctor(Nix.Metro.Plugin)">
+            <summary>
+            Constructs a new instance.
+            </summary>
+            <param name="plugin">Must not be null.</param>
+        </member>
+        <member name="P:Nix.Metro.MidiProcessor.Events">
+            <summary>
+            Gets the midi events that should be processed in the current cycle.
+            </summary>
+        </member>
+        <member name="P:Nix.Metro.MidiProcessor.MidiThru">
+            <summary>
+            Gets or sets a value indicating wether non-mapped midi events should be passed to the output.
+            </summary>
+        </member>
+        <member name="P:Nix.Metro.MidiProcessor.NoteOnEvents">
+            <summary>
+            The raw note on note numbers.
+            </summary>
+        </member>
+        <member name="T:Nix.Metro.Plugin">
+            <summary>
+            The Plugin root class that implements the interface manager and the plugin midi source.
+            </summary>
+        </member>
+        <member name="M:Nix.Metro.Plugin.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:Nix.Metro.Plugin.CreateAudioProcessor(Jacobi.Vst.Framework.IVstPluginAudioProcessor)">
+            <summary>
+            Creates a default instance and reuses that for all threads.
+            </summary>
+            <param name="instance">A reference to the default instance or null.</param>
+            <returns>Returns the default instance.</returns>
+        </member>
+        <member name="M:Nix.Metro.Plugin.CreateEditor(Jacobi.Vst.Framework.IVstPluginEditor)">
+            <summary>
+            Creates a default instance and reuses that for all threads.
+            </summary>
+            <param name="instance">A reference to the default instance or null.</param>
+            <returns>Returns the default instance.</returns>
+        </member>
+        <member name="M:Nix.Metro.Plugin.CreateMidiProcessor(Jacobi.Vst.Framework.IVstMidiProcessor)">
+            <summary>
+            Creates a default instance and reuses that for all threads.
+            </summary>
+            <param name="instance">A reference to the default instance or null.</param>
+            <returns>Returns the default instance.</returns>
+        </member>
+        <member name="M:Nix.Metro.Plugin.CreatePersistence(Jacobi.Vst.Framework.IVstPluginPersistence)">
+            <summary>
+            Creates a default instance and reuses that for all threads.
+            </summary>
+            <param name="instance">A reference to the default instance or null.</param>
+            <returns>Returns the default instance.</returns>
+        </member>
+        <member name="M:Nix.Metro.Plugin.CreateMidiSource(Jacobi.Vst.Framework.IVstPluginMidiSource)">
+            <summary>
+            Always returns <b>this</b>.
+            </summary>
+            <param name="instance">A reference to the default instance or null.</param>
+            <returns>Returns the default instance <b>this</b>.</returns>
+        </member>
+        <member name="P:Nix.Metro.Plugin.ChannelCount">
+            <summary>
+            Returns the channel count as reported by the host
+            </summary>
+        </member>
+        <member name="P:Nix.Metro.Plugin.Data">
+            <summary>
+            Gets the Metronome data.
+            </summary>
+        </member>
+        <member name="T:Nix.Metro.PluginCommandStub">
+            <summary>
+            The public Plugin Command Stub implementation derived from the framework provided <see cref="T:Jacobi.Vst.Framework.Plugin.StdPluginCommandStub"/>.
+            </summary>
+        </member>
+        <member name="M:Nix.Metro.PluginCommandStub.CreatePluginInstance">
+            <summary>
+            Called by the framework to create the plugin root class.
+            </summary>
+            <returns>Never returns null.</returns>
+        </member>
+        <member name="T:Nix.Metro.PluginEditor">
+            <summary>
+            Implements the custom UI editor for the plugin.
+            </summary>
+        </member>
+        <member name="M:Nix.Metro.PluginEditor.#ctor(Nix.Metro.Plugin)">
+            <summary>
+            Constructs a new instance.
+            </summary>
+            <param name="plugin">Must not be null.</param>
+        </member>
+        <member name="T:Nix.Metro.PluginPersistence">
+            <summary>
+            This persist our data.
+            </summary>
+        </member>
+        <member name="T:Nix.Metro.MetroData">
+            <summary>
+            I am using this to manage the variables we need to maintain.
+            </summary>
+        </member>
+        <member name="M:Nix.Metro.MetroData.#ctor">
+            <summary>
+            Initializing constuctor
+            </summary>
+        </member>
+        <member name="T:Nix.Metro.View">
+            <summary>
+            Interaction logic for UserControl1.xaml
+            </summary>
+            <summary>
+            View
+            </summary>
+        </member>
+        <member name="M:Nix.Metro.View.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Nix.Metro.WpfControlWrapper">
+            <summary>
+            Helper class to attach a WPF UserControl to a Win32 native main window of the host.
+            </summary>
+            <typeparam name="T">The type of the managed WPF Control.</typeparam>
+        </member>
+        <member name="M:Nix.Metro.WpfControlWrapper.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Constructs a new instance for the specified <paramref name="width"/> and <paramref name="height"/>.
+            </summary>
+            <param name="width">The width of the control.</param>
+            <param name="height">The height of the control.</param>
+        </member>
+        <member name="P:Nix.Metro.WpfControlWrapper.Instance">
+            <summary>
+            Gets and instance of the specified <typeparamref name="T"/>.
+            </summary>
+            <remarks>Can return null.</remarks>
+        </member>
+        <member name="M:Nix.Metro.WpfControlWrapper.Open(System.IntPtr)">
+            <summary>
+            Opens and attaches the Control to the <paramref name="hWnd"/>.
+            </summary>
+            <param name="hWnd">The native win32 handle to the main window of the host.</param>
+        </member>
+        <member name="M:Nix.Metro.WpfControlWrapper.GetBounds(System.Drawing.Rectangle@)">
+            <summary>
+            Returns the bounding rectangle of the Control.
+            </summary>
+            <param name="rect">Receives the bounding rectangle.</param>
+            <remarks>The same size as in design-time.</remarks>
+        </member>
+        <member name="M:Nix.Metro.WpfControlWrapper.Close">
+            <summary>
+            Closes and destroys the Control.
+            </summary>
+        </member>
+    </members>
+</doc>
